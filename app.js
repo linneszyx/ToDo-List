@@ -6,7 +6,7 @@ const port = 3000;
 app.set("view engine", "ejs");
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static("public"));
-mongoose.connect("mongodb://localhost:27017/todolistDB", {
+mongoose.connect("mongodb+srv://admin-linneszyx:test1234@myatlasclusteredu.1svixrw.mongodb.net/todolistDB", {
   useNewUrlParser: true,
 });
 const itemsSchema = {
